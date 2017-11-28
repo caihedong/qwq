@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    tools:context=".ui.MainActivity">
+
+    <TextView
+        android:id="@+id/TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="中国大学生在线"
+        android:textColor="#fd0329"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/Text_Xian"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/TextView"
+        android:background="#fd0329"
+        android:text="----------------" />
+
+    <RelativeLayout
+        android:layout_below="@+id/Text_Xian"
+        android:id="@+id/Line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/TabLayout"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+
+             />
+        <Button
+            android:id="@+id/Btn_Jia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:layout_toRightOf="@+id/TabLayout"
+            android:text="+"/>
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/ViewPager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Line" />
+</RelativeLayout>

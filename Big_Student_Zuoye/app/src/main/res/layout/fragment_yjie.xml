@@ -1,0 +1,20 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="com.example.administrator.big_student_zuoye.fragment.YJieFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <com.youth.banner.Banner
+        android:id="@+id/Banner_Yjie"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/RecyView_Yjie"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
